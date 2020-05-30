@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         var sentence = "moody weather";
-        var capitalizedSentence = sentence[0].toUpperCase() + sentence.slice(1).toLowerCase();
-        console.log( capitalizedSentence );
+
+        var capitalizeString = (str) => str[0].toUpperCase() + str.slice(1).toLowerCase();
+        var words = sentence.split(' ').map(capitalizeString);
+        console.log(words);
     </script>
 
 </body>
