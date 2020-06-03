@@ -9,12 +9,13 @@
 
 <body>
     <script>
-        const arr = [];
-        arr.lenght = 10;
-        for (let i = 0 ; i < arr.lenght ; i++){
-        if (arr[i] % 2 === 0 )
-            arr.push(i) }
-        alert(arr)
+        const arr = [1, 2, 4, -1, -3, 8, 7, 0, -5, 18, 12];
+        let str = ""
+
+        for (let elem of arr ){
+
+        str += elem;
+        alert(str)}
         console.log(arr)
 
     </script>
